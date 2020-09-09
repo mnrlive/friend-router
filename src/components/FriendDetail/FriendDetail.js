@@ -10,7 +10,7 @@ const FriendDetail = () => {
         fetch(`https://jsonplaceholder.typicode.com/users/${friendId}`)
         .then(res => res.json())
         .then(data => setFriend(data));
-    } , [])
+    }, [])
     return (
         <div className = "friend-style">
             <h1>Name : {name}</h1>
